@@ -1,1 +1,142 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WALLFLOW — HD &amp; 4K Wallpapers</title>
+<meta name="description" content="Discover beautiful HD and 4K wallpapers for your phone, tablet, and desktop. Explore abstract, nature, space, and minimalist backgrounds.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://wallflow.pages.dev/">
+<meta name="theme-color" content="#101c2a">
+<style>
+:root{--bg:#101c2a;--panel:#192b3b;--cream:#f2eadb;--muted:#aab8bf;--teal:#52c7bd;--orange:#f39a58}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid #ffffff20}
+.logo{font:27px Georgia,serif;letter-spacing:4px}
+.logo span{color:var(--teal)}
+nav{display:flex;gap:18px;color:var(--muted);font-size:14px}
+a{color:inherit;text-decoration:none}
+.hero{padding:55px 0 42px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+.eyebrow{color:var(--teal);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:bold}
+h1{font:400 clamp(42px,6vw,76px)/.98 Georgia,serif;letter-spacing:-2px;margin:18px 0 22px}
+h1 em{color:var(--teal)}
+p{color:var(--muted);line-height:1.7}
+.search{display:flex;gap:9px;margin-top:22px}
+.search input{min-width:0;flex:1;background:#ffffff0c;border:1px solid #ffffff30;border-radius:9px;padding:14px;color:var(--cream);font-size:15px}
+.search button{background:var(--teal);color:#10212b;border:0;border-radius:9px;padding:0 17px;font-weight:bold}
+.art{height:320px;border-radius:22px;position:relative;overflow:hidden;background:linear-gradient(135deg,#152b42,#0d1725 40%,#1b777a 75%,#e2a16e)}
+.art:before{content:"";position:absolute;width:130%;height:65%;left:-15%;top:20%;border-radius:50%;border:40px solid #4cc2b3;transform:rotate(-28deg);box-shadow:0 0 0 20px #102538,0 0 0 42px #f0dfc3,0 0 0 64px #e99054}
+.art:after{content:"";position:absolute;width:160px;height:160px;right:10%;top:12%;border-radius:50%;background:linear-gradient(145deg,#ffe1b0,#dd784a);opacity:.8}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:20px 0}
+h2{font:400 32px Georgia,serif;margin:0}
+.section-head p{font-size:13px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}
+.filters button{background:transparent;color:var(--muted);border:1px solid #ffffff30;border-radius:30px;padding:9px 13px;cursor:pointer}
+.filters button.active,.filters button:hover{background:var(--cream);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.wall{background:var(--panel);border:1px solid #ffffff15;border-radius:14px;overflow:hidden}
+.preview{height:220px;position:relative;overflow:hidden}
+.preview:before{content:"";position:absolute}
+.p1{background:linear-gradient(145deg,#10263b,#247e82,#e69b5b)}
+.p1:before{width:130%;height:55%;left:-10%;top:25%;border:25px solid #f3ddbd;border-radius:50%;transform:rotate(-35deg);box-shadow:0 0 0 20px #1e686f,0 0 0 40px #e89a5d}
+.p2{background:linear-gradient(160deg,#b5d4ce,#e6d6b7 52%,#6b8b83)}
+.p2:before{width:130%;height:80%;left:-10%;bottom:-52%;border-radius:50%;background:#294f4b;box-shadow:0 -32px 0 #507c70,0 -64px 0 #8eaa94}
+.p3{background:radial-gradient(circle at 50% 45%,#f3c88c 0 4%,#e77e5b 5% 9%,transparent 10%),linear-gradient(145deg,#111c3a,#423d74,#152c49)}
+.p3:before{width:210px;height:210px;border:1px solid #d4c3a3;border-radius:50%;left:calc(50% - 105px);top:5px;box-shadow:0 0 0 24px #ffffff08,0 0 0 50px #ffffff08}
+.p4{background:#e8dfd0}
+.p4:before{width:155px;height:155px;background:#4caaa1;border-radius:50%;top:32px;left:calc(50% - 78px);box-shadow:38px 28px 0 -10px #f39a58,-45px 50px 0 -20px #263e50}
+.p5{background:linear-gradient(130deg,#081c2c,#276c79,#d6a16d)}
+.p5:before{width:150%;height:45%;left:-20%;top:30%;border:30px solid #e8d8b9;border-radius:50%;transform:rotate(30deg);box-shadow:0 0 0 20px #1a4e63,0 0 0 42px #e88c56}
+.p6{background:linear-gradient(145deg,#e8d9c2,#d3a875)}
+.p6:before{width:180px;height:220px;border-radius:100px 100px 25px 25px;background:linear-gradient(#5bbdb1,#2c6971);left:calc(50% - 90px);top:35px;transform:rotate(25deg);box-shadow:40px 10px 0 #e28a56}
+.wall-info{padding:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.wall-info h3{margin:0 0 5px;font-size:15px;font-weight:500}
+.wall-info small{color:var(--muted)}
+.save{background:transparent;border:1px solid #ffffff40;color:var(--cream);border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer}
+.save.saved{color:var(--orange);border-color:var(--orange)}
+.empty{display:none}
+.about{margin:55px 0;padding:26px;border:1px solid #ffffff25;border-radius:16px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.about h2{font:400 30px Georgia,serif}
+footer{border-top:1px solid #ffffff25;padding:22px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:40px 0 30px;gap:22px}.hero h1{font-size:52px}.art{height:230px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.preview{height:170px}.about{grid-template-columns:1fr;padding:20px}.logo{font-size:22px}nav{gap:12px;font-size:12px}}
+@media(max-width:420px){.grid{grid-template-columns:1fr}.preview{height:225px}.hero h1{font-size:46px}.search button{padding:0 12px}nav a:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#">WALL<span>FLOW</span></a>
+<nav><a href="#discover">Discover</a><a href="#about">About</a><a href="#saved">Saved <span id="savedCount">0</span></a></nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow">A calmer screen starts here</div>
+<h1>Find your<br>next <em>wallpaper.</em></h1>
+<p>Curated visual inspiration for your phone, tablet, and desktop. Explore abstract forms, quiet landscapes, and space-inspired color.</p>
+<div class="search"><input id="searchInput" type="search" placeholder="Search wallpapers..." aria-label="Search wallpapers"><button id="searchBtn">Search</button></div>
+</div>
+<div class="art" aria-label="Abstract teal and orange artwork"></div>
+</section>
+<section id="discover">
+<div class="section-head"><h2>Discover wallpapers</h2><p>Made for every screen</p></div>
+<div class="filters">
+<button class="active" data-filter="all">All</button><button data-filter="abstract">Abstract</button><button data-filter="nature">Nature</button><button data-filter="space">Space</button><button data-filter="minimal">Minimal</button><button data-filter="phone">Phone</button><button data-filter="desktop">Desktop</button><button data-filter="saved" id="saved">Saved</button>
+</div>
+<div class="grid">
+<article class="wall" data-tags="abstract phone desktop"><div class="preview p1"></div><div class="wall-info"><div><h3>Mineral Flow</h3><small>Abstract · Phone &amp; desktop</small></div><button class="save" aria-label="Save Mineral Flow">♡</button></div></article>
+<article class="wall" data-tags="nature phone"><div class="preview p2"></div><div class="wall-info"><div><h3>Quiet Horizon</h3><small>Nature · Phone</small></div><button class="save" aria-label="Save Quiet Horizon">♡</button></div></article>
+<article class="wall" data-tags="space desktop"><div class="preview p3"></div><div class="wall-info"><div><h3>Orbit No. 04</h3><small>Space · Desktop</small></div><button class="save" aria-label="Save Orbit No. 04">♡</button></div></article>
+<article class="wall" data-tags="minimal phone"><div class="preview p4"></div><div class="wall-info"><div><h3>Soft Shapes</h3><small>Minimal · Phone</small></div><button class="save" aria-label="Save Soft Shapes">♡</button></div></article>
+<article class="wall" data-tags="abstract desktop"><div class="preview p5"></div><div class="wall-info"><div><h3>Tidal Lines</h3><small>Abstract · Desktop</small></div><button class="save" aria-label="Save Tidal Lines">♡</button></div></article>
+<article class="wall" data-tags="minimal nature phone desktop"><div class="preview p6"></div><div class="wall-info"><div><h3>Terra Form</h3><small>Minimal · Phone &amp; desktop</small></div><button class="save" aria-label="Save Terra Form">♡</button></div></article>
+</div>
+<p class="empty" id="emptyMsg">No wallpapers match your search. Try another word or category.</p>
+</section>
+<section class="about" id="about"><h2>Less noise.<br>More atmosphere.</h2><p>WALLFLOW is a wallpaper discovery concept built around color, composition, and everyday inspiration. Browse the collection, filter by style, and save designs you like. This first release contains visual previews; downloadable HD and 4K image files will be added in a future update.</p></section>
+</main>
+<footer><span>© 2026 WALLFLOW</span><span>Wallpaper inspiration for phone, tablet &amp; desktop</span></footer>
+</div>
+<script>
+const cards=[...document.querySelectorAll('.wall')];
+const buttons=[...document.querySelectorAll('[data-filter]')];
+const input=document.getElementById('searchInput');
+const empty=document.getElementById('emptyMsg');
+let active='all';
+const saved=new Set();
+function update(){
+let shown=0;
+const q=input.value.trim().toLowerCase();
+cards.forEach(card=>{
+const tags=card.dataset.tags.split(' ');
+const title=card.querySelector('h3').textContent.toLowerCase();
+const ok=(active==='all'||(active==='saved'?saved.has(card):tags.includes(active)))&&(!q||(title+' '+tags.join(' ')).includes(q));
+card.style.display=ok?'':'none';
+if(ok)shown++;
+});
+empty.style.display=shown?'none':'block';
+document.getElementById('savedCount').textContent=saved.size;
+}
+buttons.forEach(b=>b.addEventListener('click',()=>{
+active=b.dataset.filter;
+buttons.forEach(x=>x.classList.toggle('active',x===b));
+update();
+}));
+cards.forEach(card=>{
+const btn=card.querySelector('.save');
+btn.addEventListener('click',()=>{
+if(saved.has(card)){saved.delete(card);btn.classList.remove('saved');btn.textContent='♡';}
+else{saved.add(card);btn.classList.add('saved');btn.textContent='♥';}
+update();
+});
+});
+input.addEventListener('input',update);
+document.getElementById('searchBtn').addEventListener('click',update);
+</script>
+</body>
+                                                                                                                          </html>
+  
